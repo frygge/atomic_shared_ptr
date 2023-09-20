@@ -1,2 +1,4 @@
 # atomic_shared_ptr
-Provides an implementation for lock-free atomic shared pointers
+
+This paper provides a header-only implementation for lock-free atomic shared pointers.
+The description of the algorithm including a proof of its correctness and a throughput evaluation can be found in the [paper](atomic_sptr.pdf).
