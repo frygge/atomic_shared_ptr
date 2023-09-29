@@ -5,14 +5,26 @@ The description of the algorithm including a proof of its correctness and a thro
 
 ## Evaluation
 
-The evaluation provided in the paper was done using the measure tool in the test/ directory.
+The evaluation provided in the paper was done using the measure tool in the `test/` directory.
 
 Example: The following commands build the binary for measuring in a subdirectory.
-The measurement is the run for 1 to 32 workers and 1 to 56 variables but not with `no_contention` (i.e. only in contention mode).
+The measurement is the run for 2 to 4 workers and 1 to 3 variables but not with `no_contention` (i.e. only in contention mode).
 
 ```
 mkdir build && cd build
 cmake ..
 make
-./measure -workers 1 +workers 32 -vars 1 +vars 64 -no_contention | tee output.txt
+./measure -workers 2 +workers 4 -vars 1 +vars 3 -no_contention | tee ../output.txt
 ```
+
+This command will run for ~4,5 minutes, no matter what machine is used.
+See the paper for details.
+
+To post-process the `output.txt`, use the `post-process_measurement.sh` script in the `test/` directory.
+```
+mkdir my_results && cd my_results
+../test/post-process_measurement.sh ../output.txt my_machine_prefix
+```
+
+This will create one file for each single experiment, i.e., for each combination of library and operation.
+The first column contains a '-'-serparated tuple of #threads and #vars; thus, joining multiple files on the first column and then replacing dash ('-') by space (' ') yields a gnuplot friendly output.
