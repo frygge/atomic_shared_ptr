@@ -2,7 +2,7 @@
 
 This repository provides a header-only implementation for lock-free atomic shared pointers.
 The description of the algorithm including a proof of its correctness and a throughput evaluation can be found in the [paper](atomic_sptr.pdf). The paper has been reviewed and published here:
-Schäfer, J.P. (2024). Faster Lock-Free Atomic Shared Pointers. In: Intelligent Computing. SAI 2024. Lecture Notes in Networks and Systems, vol 1017. Springer, Cham. https://doi.org/10.1007/978-3-031-62277-9_2
+Schäfer, J.P. (2024). Faster Lock-Free Atomic Shared Pointers. In: Intelligent Computing. SAI 2024. Lecture Notes in Networks and Systems, vol 1017. Springer, Cham. <https://doi.org/10.1007/978-3-031-62277-9_2>
 
 ## Evaluation
 
