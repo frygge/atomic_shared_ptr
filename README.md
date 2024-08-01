@@ -35,13 +35,13 @@ The first column contains a '-'-serparated tuple of #threads and #vars; thus, jo
 If you use this work, please cite:
 ```
 @InProceedings{10.1007/978-3-031-62277-9_2,
-author="Sch{\"a}fer, J{\"o}rg P.",
-title="Faster Lock-Free Atomic Shared Pointers",
-booktitle="Intelligent Computing",
-year="2024",
-publisher="Springer Nature Switzerland",
-pages="18--38",
-isbn="978-3-031-62277-9"
+  author="Sch{\"a}fer, J{\"o}rg P.",
+  title="Faster Lock-Free Atomic Shared Pointers",
+  booktitle="Intelligent Computing",
+  year="2024",
+  publisher="Springer Nature Switzerland",
+  pages="18--38",
+  isbn="978-3-031-62277-9"
 }
 
 ```
